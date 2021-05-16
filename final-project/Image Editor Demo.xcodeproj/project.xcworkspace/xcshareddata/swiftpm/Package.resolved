@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SettingsViewController",
+        "repositoryURL": "https://github.com/eugenebokhan/settings-view-controller.git",
+        "state": {
+          "branch": null,
+          "revision": "f1286e820afc82ba451de2c104ec57f514415382",
+          "version": "0.2.4"
+        }
+      },
+      {
+        "package": "SnapKit",
+        "repositoryURL": "https://github.com/SnapKit/SnapKit.git",
+        "state": {
+          "branch": null,
+          "revision": "d458564516e5676af9c70b4f4b2a9178294f1bc6",
+          "version": "5.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

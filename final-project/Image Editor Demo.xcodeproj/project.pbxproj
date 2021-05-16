@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18316C78263088B600397C84 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 18316C77263088B600397C84 /* SnapKit */; };
+		189498522631C19F0011E57B /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189498512631C19F0011E57B /* UIViewController+Extensions.swift */; };
+		1894985F2631C4720011E57B /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1894985E2631C4720011E57B /* NavigationBar.swift */; };
+		189498782631D5290011E57B /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189498772631D5290011E57B /* UIImage+Extensions.swift */; };
+		1894987B2631D9D80011E57B /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 1894987A2631D9D80011E57B /* Shaders.metal */; };
+		1894988B2631DED40011E57B /* Adjustments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1894988A2631DED40011E57B /* Adjustments.swift */; };
+		18A389002641309D0001E796 /* TextureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A388FF2641309D0001E796 /* TextureManager.swift */; };
+		18C675682632D8A00029B50D /* SettingsViewController in Frameworks */ = {isa = PBXBuildFile; productRef = 18C675672632D8A00029B50D /* SettingsViewController */; };
+		18C8899B26307BFB00B126F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8899A26307BFB00B126F6 /* AppDelegate.swift */; };
+		18C8899D26307BFB00B126F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8899C26307BFB00B126F6 /* SceneDelegate.swift */; };
+		18C8899F26307BFB00B126F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8899E26307BFB00B126F6 /* ViewController.swift */; };
+		18C889A426307BFB00B126F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18C889A326307BFB00B126F6 /* Assets.xcassets */; };
+		18C889A726307BFB00B126F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C889A526307BFB00B126F6 /* LaunchScreen.storyboard */; };
+		18DF81E72639939D00D88D10 /* ViewController+Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DF81E62639939D00D88D10 /* ViewController+Picker.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		189498512631C19F0011E57B /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		1894985E2631C4720011E57B /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		189498772631D5290011E57B /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		1894987A2631D9D80011E57B /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		1894988A2631DED40011E57B /* Adjustments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Adjustments.swift; sourceTree = "<group>"; };
+		18A388FF2641309D0001E796 /* TextureManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextureManager.swift; sourceTree = "<group>"; };
+		18C8899726307BFB00B126F6 /* Image Editor Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Image Editor Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18C8899A26307BFB00B126F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18C8899C26307BFB00B126F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		18C8899E26307BFB00B126F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18C889A326307BFB00B126F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18C889A626307BFB00B126F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18C889A826307BFB00B126F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18DF81E62639939D00D88D10 /* ViewController+Picker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Picker.swift"; sourceTree = "<group>"; };
+		18DF81E82639A90D00D88D10 /* ColorConversion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorConversion.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18C8899426307BFB00B126F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18316C78263088B600397C84 /* SnapKit in Frameworks */,
+				18C675682632D8A00029B50D /* SettingsViewController in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		189498552631C1A50011E57B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				189498572631C1AB0011E57B /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		189498572631C1AB0011E57B /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				189498512631C19F0011E57B /* UIViewController+Extensions.swift */,
+				189498772631D5290011E57B /* UIImage+Extensions.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		18C675642632D4E90029B50D /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				1894988A2631DED40011E57B /* Adjustments.swift */,
+				1894987A2631D9D80011E57B /* Shaders.metal */,
+				18DF81E82639A90D00D88D10 /* ColorConversion.h */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		18C8898E26307BFB00B126F6 = {
+			isa = PBXGroup;
+			children = (
+				18C8899926307BFB00B126F6 /* Image Editor Demo */,
+				18C8899826307BFB00B126F6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18C8899826307BFB00B126F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18C8899726307BFB00B126F6 /* Image Editor Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18C8899926307BFB00B126F6 /* Image Editor Demo */ = {
+			isa = PBXGroup;
+			children = (
+				18C8899A26307BFB00B126F6 /* AppDelegate.swift */,
+				18C8899C26307BFB00B126F6 /* SceneDelegate.swift */,
+				18C8899E26307BFB00B126F6 /* ViewController.swift */,
+				18A388FF2641309D0001E796 /* TextureManager.swift */,
+				18DF81E62639939D00D88D10 /* ViewController+Picker.swift */,
+				1894985E2631C4720011E57B /* NavigationBar.swift */,
+				18C675642632D4E90029B50D /* Shaders */,
+				189498552631C1A50011E57B /* Extensions */,
+				18C889A326307BFB00B126F6 /* Assets.xcassets */,
+				18C889A526307BFB00B126F6 /* LaunchScreen.storyboard */,
+				18C889A826307BFB00B126F6 /* Info.plist */,
+			);
+			path = "Image Editor Demo";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18C8899626307BFB00B126F6 /* Image Editor Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18C889AB26307BFB00B126F6 /* Build configuration list for PBXNativeTarget "Image Editor Demo" */;
+			buildPhases = (
+				18C8899326307BFB00B126F6 /* Sources */,
+				18C8899426307BFB00B126F6 /* Frameworks */,
+				18C8899526307BFB00B126F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Image Editor Demo";
+			packageProductDependencies = (
+				18316C77263088B600397C84 /* SnapKit */,
+				18C675672632D8A00029B50D /* SettingsViewController */,
+			);
+			productName = "Image Editor Demo";
+			productReference = 18C8899726307BFB00B126F6 /* Image Editor Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18C8898F26307BFB00B126F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					18C8899626307BFB00B126F6 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 18C8899226307BFB00B126F6 /* Build configuration list for PBXProject "Image Editor Demo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18C8898E26307BFB00B126F6;
+			packageReferences = (
+				18316C76263088B600397C84 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				18C675662632D8A00029B50D /* XCRemoteSwiftPackageReference "settings-view-controller" */,
+			);
+			productRefGroup = 18C8899826307BFB00B126F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18C8899626307BFB00B126F6 /* Image Editor Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18C8899526307BFB00B126F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C889A726307BFB00B126F6 /* LaunchScreen.storyboard in Resources */,
+				18C889A426307BFB00B126F6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18C8899326307BFB00B126F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1894985F2631C4720011E57B /* NavigationBar.swift in Sources */,
+				189498522631C19F0011E57B /* UIViewController+Extensions.swift in Sources */,
+				18C8899F26307BFB00B126F6 /* ViewController.swift in Sources */,
+				18DF81E72639939D00D88D10 /* ViewController+Picker.swift in Sources */,
+				18C8899B26307BFB00B126F6 /* AppDelegate.swift in Sources */,
+				1894988B2631DED40011E57B /* Adjustments.swift in Sources */,
+				18A389002641309D0001E796 /* TextureManager.swift in Sources */,
+				18C8899D26307BFB00B126F6 /* SceneDelegate.swift in Sources */,
+				1894987B2631D9D80011E57B /* Shaders.metal in Sources */,
+				189498782631D5290011E57B /* UIImage+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		18C889A526307BFB00B126F6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18C889A626307BFB00B126F6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18C889A926307BFB00B126F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18C889AA26307BFB00B126F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18C889AC26307BFB00B126F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U59P58LC6V;
+				INFOPLIST_FILE = "Image Editor Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ai.prisma.Image-Editor-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18C889AD26307BFB00B126F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U59P58LC6V;
+				INFOPLIST_FILE = "Image Editor Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ai.prisma.Image-Editor-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18C8899226307BFB00B126F6 /* Build configuration list for PBXProject "Image Editor Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18C889A926307BFB00B126F6 /* Debug */,
+				18C889AA26307BFB00B126F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18C889AB26307BFB00B126F6 /* Build configuration list for PBXNativeTarget "Image Editor Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18C889AC26307BFB00B126F6 /* Debug */,
+				18C889AD26307BFB00B126F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		18316C76263088B600397C84 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		18C675662632D8A00029B50D /* XCRemoteSwiftPackageReference "settings-view-controller" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/eugenebokhan/settings-view-controller.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		18316C77263088B600397C84 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18316C76263088B600397C84 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		18C675672632D8A00029B50D /* SettingsViewController */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18C675662632D8A00029B50D /* XCRemoteSwiftPackageReference "settings-view-controller" */;
+			productName = SettingsViewController;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 18C8898F26307BFB00B126F6 /* Project object */;
+}
