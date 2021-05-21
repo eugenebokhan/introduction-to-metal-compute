@@ -1,0 +1,43 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alloy",
+        "repositoryURL": "https://github.com/s1ddok/alloy.git",
+        "state": {
+          "branch": null,
+          "revision": "75b09167be15a1ca47c2e496c283e28248db6a5b",
+          "version": "0.17.0"
+        }
+      },
+      {
+        "package": "SettingsViewController",
+        "repositoryURL": "https://github.com/eugenebokhan/settings-view-controller.git",
+        "state": {
+          "branch": null,
+          "revision": "f1286e820afc82ba451de2c104ec57f514415382",
+          "version": "0.2.4"
+        }
+      },
+      {
+        "package": "SnapKit",
+        "repositoryURL": "https://github.com/SnapKit/SnapKit.git",
+        "state": {
+          "branch": null,
+          "revision": "d458564516e5676af9c70b4f4b2a9178294f1bc6",
+          "version": "5.0.1"
+        }
+      },
+      {
+        "package": "TextureView",
+        "repositoryURL": "https://github.com/eugenebokhan/texture-view.git",
+        "state": {
+          "branch": null,
+          "revision": "f9861e950dd89df1340e5813a0a1b9741bd6fc39",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

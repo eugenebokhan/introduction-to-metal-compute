@@ -11,6 +11,8 @@
 		189498522631C19F0011E57B /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189498512631C19F0011E57B /* UIViewController+Extensions.swift */; };
 		1894985F2631C4720011E57B /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1894985E2631C4720011E57B /* NavigationBar.swift */; };
 		189498782631D5290011E57B /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189498772631D5290011E57B /* UIImage+Extensions.swift */; };
+		1894987B2631D9D80011E57B /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 1894987A2631D9D80011E57B /* Shaders.metal */; };
+		1894988B2631DED40011E57B /* Adjustments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1894988A2631DED40011E57B /* Adjustments.swift */; };
 		18C675682632D8A00029B50D /* SettingsViewController in Frameworks */ = {isa = PBXBuildFile; productRef = 18C675672632D8A00029B50D /* SettingsViewController */; };
 		18C8899B26307BFB00B126F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8899A26307BFB00B126F6 /* AppDelegate.swift */; };
 		18C8899D26307BFB00B126F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8899C26307BFB00B126F6 /* SceneDelegate.swift */; };
@@ -18,12 +20,16 @@
 		18C889A426307BFB00B126F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18C889A326307BFB00B126F6 /* Assets.xcassets */; };
 		18C889A726307BFB00B126F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C889A526307BFB00B126F6 /* LaunchScreen.storyboard */; };
 		18DF81E72639939D00D88D10 /* ViewController+Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DF81E62639939D00D88D10 /* ViewController+Picker.swift */; };
+		18EEA1D52657E31D00F08681 /* Alloy in Frameworks */ = {isa = PBXBuildFile; productRef = 18EEA1D42657E31D00F08681 /* Alloy */; };
+		18EEA1D8265817C800F08681 /* TextureView in Frameworks */ = {isa = PBXBuildFile; productRef = 18EEA1D7265817C800F08681 /* TextureView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		189498512631C19F0011E57B /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		1894985E2631C4720011E57B /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		189498772631D5290011E57B /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		1894987A2631D9D80011E57B /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		1894988A2631DED40011E57B /* Adjustments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Adjustments.swift; sourceTree = "<group>"; };
 		18C8899726307BFB00B126F6 /* Image Editor Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Image Editor Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C8899A26307BFB00B126F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18C8899C26307BFB00B126F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,8 +46,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18EEA1D52657E31D00F08681 /* Alloy in Frameworks */,
 				18316C78263088B600397C84 /* SnapKit in Frameworks */,
 				18C675682632D8A00029B50D /* SettingsViewController in Frameworks */,
+				18EEA1D8265817C800F08681 /* TextureView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +76,8 @@
 		18C675642632D4E90029B50D /* Shaders */ = {
 			isa = PBXGroup;
 			children = (
+				1894988A2631DED40011E57B /* Adjustments.swift */,
+				1894987A2631D9D80011E57B /* Shaders.metal */,
 				18DF81E82639A90D00D88D10 /* ColorConversion.h */,
 			);
 			path = Shaders;
@@ -125,6 +135,8 @@
 			packageProductDependencies = (
 				18316C77263088B600397C84 /* SnapKit */,
 				18C675672632D8A00029B50D /* SettingsViewController */,
+				18EEA1D42657E31D00F08681 /* Alloy */,
+				18EEA1D7265817C800F08681 /* TextureView */,
 			);
 			productName = "Image Editor Demo";
 			productReference = 18C8899726307BFB00B126F6 /* Image Editor Demo.app */;
@@ -156,6 +168,8 @@
 			packageReferences = (
 				18316C76263088B600397C84 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				18C675662632D8A00029B50D /* XCRemoteSwiftPackageReference "settings-view-controller" */,
+				18EEA1D32657E31D00F08681 /* XCRemoteSwiftPackageReference "alloy" */,
+				18EEA1D6265817C800F08681 /* XCRemoteSwiftPackageReference "texture-view" */,
 			);
 			productRefGroup = 18C8899826307BFB00B126F6 /* Products */;
 			projectDirPath = "";
@@ -188,7 +202,9 @@
 				18C8899F26307BFB00B126F6 /* ViewController.swift in Sources */,
 				18DF81E72639939D00D88D10 /* ViewController+Picker.swift in Sources */,
 				18C8899B26307BFB00B126F6 /* AppDelegate.swift in Sources */,
+				1894988B2631DED40011E57B /* Adjustments.swift in Sources */,
 				18C8899D26307BFB00B126F6 /* SceneDelegate.swift in Sources */,
+				1894987B2631D9D80011E57B /* Shaders.metal in Sources */,
 				189498782631D5290011E57B /* UIImage+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,6 +417,22 @@
 				minimumVersion = 0.2.4;
 			};
 		};
+		18EEA1D32657E31D00F08681 /* XCRemoteSwiftPackageReference "alloy" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/s1ddok/alloy.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.17.0;
+			};
+		};
+		18EEA1D6265817C800F08681 /* XCRemoteSwiftPackageReference "texture-view" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/eugenebokhan/texture-view.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -413,6 +445,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 18C675662632D8A00029B50D /* XCRemoteSwiftPackageReference "settings-view-controller" */;
 			productName = SettingsViewController;
+		};
+		18EEA1D42657E31D00F08681 /* Alloy */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18EEA1D32657E31D00F08681 /* XCRemoteSwiftPackageReference "alloy" */;
+			productName = Alloy;
+		};
+		18EEA1D7265817C800F08681 /* TextureView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18EEA1D6265817C800F08681 /* XCRemoteSwiftPackageReference "texture-view" */;
+			productName = TextureView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
