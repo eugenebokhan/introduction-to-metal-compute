@@ -148,11 +148,13 @@ class ViewController: UIViewController {
         guard let source = self.texturePair?.source,
               let destination = self.texturePair?.destination
         else { return }
-        try? self.context.schedule { commandBuffer in
-            self.adjustments.encode(source: source,
-                                    destination: destination,
-                                    in: commandBuffer)
-            self.textureView.draw(in: commandBuffer)
+        DispatchQueue.main.async {
+            try? self.context.schedule { commandBuffer in
+                self.adjustments.encode(source: source,
+                                        destination: destination,
+                                        in: commandBuffer)
+                self.textureView.draw(in: commandBuffer)
+            }
         }
     }
 }

@@ -414,7 +414,7 @@
 			repositoryURL = "https://github.com/eugenebokhan/settings-view-controller.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.2.4;
+				minimumVersion = 0.2.5;
 			};
 		};
 		18EEA1D32657E31D00F08681 /* XCRemoteSwiftPackageReference "alloy" */ = {
