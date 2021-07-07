@@ -47,15 +47,15 @@ final class TextureManager {
         let bytesPerRow = texture.width * 4
         let length = bytesPerRow * texture.height
         
-        let rgbaBytes = UnsafeMutableRawPointer.allocate(byteCount: length,
-                                                         alignment: MemoryLayout<UInt8>.alignment)
-        defer { rgbaBytes.deallocate() }
+        let pixelBytes = UnsafeMutableRawPointer.allocate(byteCount: length,
+                                                          alignment: MemoryLayout<UInt8>.alignment)
+        defer { pixelBytes.deallocate() }
         
         let destinationRegion = MTLRegion(origin: .init(x: 0, y: 0, z: 0),
                                           size: .init(width: texture.width,
                                                       height: texture.height,
                                                       depth: texture.depth))
-        texture.getBytes(rgbaBytes,
+        texture.getBytes(pixelBytes,
                          bytesPerRow: bytesPerRow,
                          from: destinationRegion,
                          mipmapLevel: 0)
@@ -64,7 +64,7 @@ final class TextureManager {
         let bitmapInfo = CGBitmapInfo(rawValue: CGBitmapInfo.byteOrder32Little.rawValue | CGImageAlphaInfo.noneSkipFirst.rawValue)
         
         guard let data = CFDataCreate(nil,
-                                      rgbaBytes.assumingMemoryBound(to: UInt8.self),
+                                      pixelBytes.assumingMemoryBound(to: UInt8.self),
                                       length),
               let dataProvider = CGDataProvider(data: data),
               let cgImage = CGImage(width: texture.width,
