@@ -161,7 +161,7 @@ class ViewController: UIViewController {
                                 destination: destination,
                                 in: commandBuffer)
 
-        commandBuffer.addScheduledHandler { _ in
+        commandBuffer.addCompletedHandler { _ in
             guard let cgImage = try? self.textureManager.cgImage(from: destination)
             else { return }
 
