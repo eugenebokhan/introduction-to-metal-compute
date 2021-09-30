@@ -2,7 +2,7 @@
   "object": {
     "pins": [
       {
-        "package": "alloy",
+        "package": "Alloy",
         "repositoryURL": "https://github.com/s1ddok/alloy.git",
         "state": {
           "branch": null,
@@ -11,7 +11,7 @@
         }
       },
       {
-        "package": "settings-view-controller",
+        "package": "SettingsViewController",
         "repositoryURL": "https://github.com/eugenebokhan/settings-view-controller.git",
         "state": {
           "branch": null,
@@ -29,7 +29,7 @@
         }
       },
       {
-        "package": "texture-view",
+        "package": "TextureView",
         "repositoryURL": "https://github.com/eugenebokhan/texture-view.git",
         "state": {
           "branch": null,
