@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1819A2FA2C32FBE2005D876A /* TextureView in Frameworks */ = {isa = PBXBuildFile; productRef = 1819A2F92C32FBE2005D876A /* TextureView */; };
 		18316C78263088B600397C84 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 18316C77263088B600397C84 /* SnapKit */; };
+		1839E7522C32E5E000B51AED /* MetalTools in Frameworks */ = {isa = PBXBuildFile; productRef = 1839E7512C32E5E000B51AED /* MetalTools */; };
 		189498522631C19F0011E57B /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189498512631C19F0011E57B /* UIViewController+Extensions.swift */; };
 		1894985F2631C4720011E57B /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1894985E2631C4720011E57B /* NavigationBar.swift */; };
 		189498782631D5290011E57B /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189498772631D5290011E57B /* UIImage+Extensions.swift */; };
@@ -20,8 +22,6 @@
 		18C889A426307BFB00B126F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18C889A326307BFB00B126F6 /* Assets.xcassets */; };
 		18C889A726307BFB00B126F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C889A526307BFB00B126F6 /* LaunchScreen.storyboard */; };
 		18DF81E72639939D00D88D10 /* ViewController+Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DF81E62639939D00D88D10 /* ViewController+Picker.swift */; };
-		18EEA1D52657E31D00F08681 /* Alloy in Frameworks */ = {isa = PBXBuildFile; productRef = 18EEA1D42657E31D00F08681 /* Alloy */; };
-		18EEA1D8265817C800F08681 /* TextureView in Frameworks */ = {isa = PBXBuildFile; productRef = 18EEA1D7265817C800F08681 /* TextureView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,10 +46,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18EEA1D52657E31D00F08681 /* Alloy in Frameworks */,
 				18316C78263088B600397C84 /* SnapKit in Frameworks */,
 				18C675682632D8A00029B50D /* SettingsViewController in Frameworks */,
-				18EEA1D8265817C800F08681 /* TextureView in Frameworks */,
+				1839E7522C32E5E000B51AED /* MetalTools in Frameworks */,
+				1819A2FA2C32FBE2005D876A /* TextureView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +135,8 @@
 			packageProductDependencies = (
 				18316C77263088B600397C84 /* SnapKit */,
 				18C675672632D8A00029B50D /* SettingsViewController */,
-				18EEA1D42657E31D00F08681 /* Alloy */,
-				18EEA1D7265817C800F08681 /* TextureView */,
+				1839E7512C32E5E000B51AED /* MetalTools */,
+				1819A2F92C32FBE2005D876A /* TextureView */,
 			);
 			productName = "Image Editor Demo";
 			productReference = 18C8899726307BFB00B126F6 /* Image Editor Demo.app */;
@@ -148,8 +148,9 @@
 		18C8898F26307BFB00B126F6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					18C8899626307BFB00B126F6 = {
 						CreatedOnToolsVersion = 12.4;
@@ -168,8 +169,8 @@
 			packageReferences = (
 				18316C76263088B600397C84 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				18C675662632D8A00029B50D /* XCRemoteSwiftPackageReference "settings-view-controller" */,
-				18EEA1D32657E31D00F08681 /* XCRemoteSwiftPackageReference "alloy" */,
-				18EEA1D6265817C800F08681 /* XCRemoteSwiftPackageReference "texture-view" */,
+				1839E7502C32E5E000B51AED /* XCRemoteSwiftPackageReference "metal-tools" */,
+				1819A2F82C32FBE2005D876A /* XCRemoteSwiftPackageReference "texture-view" */,
 			);
 			productRefGroup = 18C8899826307BFB00B126F6 /* Products */;
 			projectDirPath = "";
@@ -260,6 +261,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -321,6 +323,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -345,7 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 63TG84TE66;
 				INFOPLIST_FILE = "Image Editor Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -364,7 +367,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 63TG84TE66;
 				INFOPLIST_FILE = "Image Editor Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -401,12 +404,28 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		1819A2F82C32FBE2005D876A /* XCRemoteSwiftPackageReference "texture-view" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/eugenebokhan/texture-view.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.1.0;
+			};
+		};
 		18316C76263088B600397C84 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
 				kind = exactVersion;
 				version = 5.0.1;
+			};
+		};
+		1839E7502C32E5E000B51AED /* XCRemoteSwiftPackageReference "metal-tools" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/computer-graphics-tools/metal-tools.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.3.0;
 			};
 		};
 		18C675662632D8A00029B50D /* XCRemoteSwiftPackageReference "settings-view-controller" */ = {
@@ -417,44 +436,28 @@
 				version = 0.2.5;
 			};
 		};
-		18EEA1D32657E31D00F08681 /* XCRemoteSwiftPackageReference "alloy" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/s1ddok/alloy.git";
-			requirement = {
-				kind = exactVersion;
-				version = 0.17.0;
-			};
-		};
-		18EEA1D6265817C800F08681 /* XCRemoteSwiftPackageReference "texture-view" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/eugenebokhan/texture-view.git";
-			requirement = {
-				kind = exactVersion;
-				version = 1.0.1;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1819A2F92C32FBE2005D876A /* TextureView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1819A2F82C32FBE2005D876A /* XCRemoteSwiftPackageReference "texture-view" */;
+			productName = TextureView;
+		};
 		18316C77263088B600397C84 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 18316C76263088B600397C84 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
+		1839E7512C32E5E000B51AED /* MetalTools */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1839E7502C32E5E000B51AED /* XCRemoteSwiftPackageReference "metal-tools" */;
+			productName = MetalTools;
+		};
 		18C675672632D8A00029B50D /* SettingsViewController */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 18C675662632D8A00029B50D /* XCRemoteSwiftPackageReference "settings-view-controller" */;
 			productName = SettingsViewController;
-		};
-		18EEA1D42657E31D00F08681 /* Alloy */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 18EEA1D32657E31D00F08681 /* XCRemoteSwiftPackageReference "alloy" */;
-			productName = Alloy;
-		};
-		18EEA1D7265817C800F08681 /* TextureView */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 18EEA1D6265817C800F08681 /* XCRemoteSwiftPackageReference "texture-view" */;
-			productName = TextureView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

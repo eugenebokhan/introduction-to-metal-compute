@@ -1,10 +1,8 @@
 #ifndef ColorConversion_h
 #define ColorConversion_h
 
-#if __METAL_MACOS__ || __METAL_IOS__
 #include <metal_stdlib>
 using namespace metal;
-#endif /* __METAL_MACOS__ || __METAL_IOS__ */
 
 #import <simd/simd.h>
 

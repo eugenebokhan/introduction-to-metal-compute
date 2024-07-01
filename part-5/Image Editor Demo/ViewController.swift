@@ -2,7 +2,7 @@ import UIKit
 import SnapKit
 import SettingsViewController
 import MetalKit
-import Alloy
+import MetalTools
 import TextureView
 
 class ViewController: UIViewController {

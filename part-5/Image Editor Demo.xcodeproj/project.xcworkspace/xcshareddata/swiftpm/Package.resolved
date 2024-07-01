@@ -1,43 +1,60 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "Alloy",
-        "repositoryURL": "https://github.com/s1ddok/alloy.git",
-        "state": {
-          "branch": null,
-          "revision": "75b09167be15a1ca47c2e496c283e28248db6a5b",
-          "version": "0.17.0"
-        }
-      },
-      {
-        "package": "SettingsViewController",
-        "repositoryURL": "https://github.com/eugenebokhan/settings-view-controller.git",
-        "state": {
-          "branch": null,
-          "revision": "f17fb81a62a6e314a19aaefda7f0aab58bc36c32",
-          "version": "0.2.5"
-        }
-      },
-      {
-        "package": "SnapKit",
-        "repositoryURL": "https://github.com/SnapKit/SnapKit.git",
-        "state": {
-          "branch": null,
-          "revision": "d458564516e5676af9c70b4f4b2a9178294f1bc6",
-          "version": "5.0.1"
-        }
-      },
-      {
-        "package": "TextureView",
-        "repositoryURL": "https://github.com/eugenebokhan/texture-view.git",
-        "state": {
-          "branch": null,
-          "revision": "170ac97e652365b7de97df0cb5d9f3c38276a0f6",
-          "version": "1.0.1"
-        }
+  "originHash" : "ce5021ec2395d08158ba2b22a13076df65ebe761d3e207a68305e68701fdee7a",
+  "pins" : [
+    {
+      "identity" : "metal-tools",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/computer-graphics-tools/metal-tools.git",
+      "state" : {
+        "revision" : "a446cc45965c84b8acd201e182e9bed4e16f7fd0",
+        "version" : "1.3.0"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "settings-view-controller",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/eugenebokhan/settings-view-controller.git",
+      "state" : {
+        "revision" : "f17fb81a62a6e314a19aaefda7f0aab58bc36c32",
+        "version" : "0.2.5"
+      }
+    },
+    {
+      "identity" : "simd-tools",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/computer-graphics-tools/simd-tools.git",
+      "state" : {
+        "revision" : "9f7f2be245cff37244d39c22e815abec25bf09bb",
+        "version" : "0.0.1"
+      }
+    },
+    {
+      "identity" : "snapkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SnapKit/SnapKit.git",
+      "state" : {
+        "revision" : "d458564516e5676af9c70b4f4b2a9178294f1bc6",
+        "version" : "5.0.1"
+      }
+    },
+    {
+      "identity" : "swift-syntax",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-syntax.git",
+      "state" : {
+        "revision" : "303e5c5c36d6a558407d364878df131c3546fad8",
+        "version" : "510.0.2"
+      }
+    },
+    {
+      "identity" : "texture-view",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/eugenebokhan/texture-view.git",
+      "state" : {
+        "revision" : "317c32358749acd4cf85ed4c643bdb532d83c8cf",
+        "version" : "1.1.0"
+      }
+    }
+  ],
+  "version" : 3
 }
